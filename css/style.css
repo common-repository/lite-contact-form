@@ -1,0 +1,54 @@
+.lcf label{
+display:block;
+}
+.lcf-invalid{
+border-bottom-color:#D9534F !important;
+box-shadow:0 1px 0 0 #D9534F !important;
+}
+.lcf-tip{
+display:block;
+position:absolute;
+margin:0 4px;
+}
+.lcf p:last-of-type{
+margin:0;
+}
+#lcf-response{
+display:inline-block;
+margin-top:1.5em;
+padding:1em 1.5em;
+font-weight:300;
+}
+#lcf-response:empty{
+display:none;
+}
+.lcf-success{
+border:1px solid #D6E9C6;
+background-color:#DFF0D8;
+color:#155724;
+}
+.lcf-error{
+border:1px solid #F5C6CB;
+background-color:#F8D7DA;
+color:#721C24;
+}
+.lcf-blocked{
+border:1px solid #FFEEBA;
+background-color:#FFF3CD;
+color:#856404;
+}
+.lcf-spinner{
+display:inline-block;
+vertical-align:middle;
+border:2px solid #0996CB;
+border-top:2px solid #F3F3F3;
+border-radius:50%;
+width:14px;
+height:14px;
+margin:0 0 0 8px;
+animation:spin 0.8s linear infinite;
+}
+@keyframes spin{
+0% { transform:rotate(0deg); }
+100% { transform:rotate(360deg); }
+}
